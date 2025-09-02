@@ -26,16 +26,19 @@ CodeUChain is a revolutionary chain processing framework that provides **consist
 To create beautiful, consistent APIs that work beautifully in any programming language, making complex async/sync patterns simple and intuitive.
 
 ### 💡 **Key Innovation**
-```csharp
-// Traditional approach requires complex patterns
-public class MyLink : ISyncLink<IContext> { /* complex setup */ }
+```python
+# ❌ Traditional: Multiple interfaces, adapters, complex patterns
+class MySyncLink(ISyncLink[IContext]):
+    def process(self, context: IContext) -> IContext:
+        # Complex setup and boilerplate
+        pass
 
-// CodeUChain: Just write normal methods!
-public class MyLink : ILink {
-    public ValueTask<Context> ProcessAsync(Context context) {
-        return ValueTask.FromResult(context.Insert("result", "done"));
-    }
-}
+class MyAsyncLink(IAsyncLink[IContext]):
+    async def process_async(self, context: IContext) -> IContext:
+        # Complex setup and boilerplate
+        pass
+
+chain = ComplexChainBuilder().add_sync(sync_link).add_async(async_link).build()
 ```
 
 ## 🛠️ **Our Technology Stack**
