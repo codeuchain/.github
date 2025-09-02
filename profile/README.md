@@ -39,14 +39,14 @@ chain = Chain().add_link(MyProcessor(), "processor")
 
 ## 🚀 Why CodeUChain Changes Everything
 
-### � **True TDD: Agentic Development**
+### **True TDD: Agentic Development**
 - **Write Tests First**: Define expected input/output behavior before implementation
 - **Direct Link Testing**: Test individual components in isolation with predictable results
 - **Agentic Systems**: Opens the door to beautiful AI-driven development workflows
 - **Input/Output Contracts**: Clear validation of data transformation expectations
 - **Incremental Development**: Build complex systems through validated, testable components
 
-### �🤖 **AI-Native Design**
+### 🤖 **AI-Native Design**
 - **Agent-Friendly**: AI agents can maintain repositories across language boundaries
 - **Universal Patterns**: Same mental model regardless of target language
 - **Automated Translation**: Core concepts map consistently between languages
