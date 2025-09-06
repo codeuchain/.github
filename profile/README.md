@@ -22,9 +22,9 @@ The diagram below shows the high-level flow: a `Chain` contains ordered `Links`;
 flowchart LR
     subgraph observers[Middleware Observers]
     direction LR
-        MW1([Middleware 1])
-        MW2([Middleware 2])
-        MW3([Middleware 3])
+        MW1([Middleware1])
+        MW2([Middleware2])
+        MW3([Middleware3])
     end
 
     classDef mw fill:#717,stroke:#000,stroke-width:1px;
